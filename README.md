@@ -14,5 +14,7 @@ Using pip3 install librarie_name or pip install librarie_name
 The Dockerfile it's already configured
 
 To build the flask image need to install Docker(Docker 4.26.1 used)
+
 Then in the terminal type "docker build -t voxus_test_app" can be any name but this was the used
+
 To run it type in terminal "docker run -d -p 5000:5000 voxus_test_app"
