@@ -3,10 +3,10 @@ Test to Voxus, assigned to develop an app to receive latitude and longitude and 
 # Dependencies
 
 To run the app it's necessary to install python and the following libraries
-flask
-pytz
-geopy
-requests
+* flask
+* pytz
+* geopy
+* requests
 
 Using pip3 install librarie_name or pip install librarie_name
 
