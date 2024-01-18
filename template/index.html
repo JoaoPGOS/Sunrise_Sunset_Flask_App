@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style/style.css">
+    <title>Sunrise/Sunset App</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="post">
+            <label for="latitude">Type your Latitude</label>
+            <input type="text" name="latitude" id="latitude" maxlength="10" onchange="validate_latitude()" required>
+            <label for="longitude">Type your Longitude</label>
+            <input type="text" name="longitude" id="longitude" maxlength="10" onchange="validate_longitude()" required>
+            <label for="city">Or type your city to get lat and lng</label>
+                <input type="text" name="city" id="city" placeholder="City">
+                <button type="button" onclick="get_lat_and_lgn()">Get your longitude and latitude</button>
+                <label for="timezones">Timezone</label>
+                <select name="timezones" id="timezones">
+                    {{timezones | safe}}<!-- When it's used in flask some value will be inserted by using render_template function the "safe" inside of it it's to receive also html elements -->
+                </select>
+            <label for="sunrise_and_sunset">Sunrise or Sunset</label>
+            <select name="sunrise_and_sunset" id="sunrise_and_sunset" required>
+                <option value="sunrise">Sunrise</option>
+                <option value="sunset">Sunset</option>
+            </select>
+            <input type="submit" name="submit" value="submit">
+        </form>
+        <div class="response_div">{{onpage_response | safe}}</div>
+    </div>
+
+
+
+</body>
+<script src="/static/javascript/script.js"></script>
+</html>

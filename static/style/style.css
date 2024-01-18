@@ -1,0 +1,28 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    background-color: #111;
+}
+.container, form{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 1rem;
+    background-color: white;
+    color: #111;
+    padding: 20px;
+    border-radius: 15px;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.container button, input[type="submit"]{
+    border: #111 1px solid;
+    background-color: white;
+    cursor: pointer;
+}
