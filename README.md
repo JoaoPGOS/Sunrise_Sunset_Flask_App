@@ -18,3 +18,16 @@ To build the flask image need to install Docker(Docker 4.26.1 used)
 Then in the terminal type "docker build -t voxus_test_app" can be any name but this was the used
 
 To run it type in terminal "docker run -d -p 5000:5000 voxus_test_app"
+
+#Sobre mim
+1) Como você começou no mundo da programação? Quais foram suas motivações?
+O que chamou sua atenção?
+
+Comecei no mundo da programação pois tinha muito interesse em desevolver jogos, mas realmente gostei da área de desenvolvimento web e backend, foquei muito em python e utilizo seus frameworks desde 2019
+
+2) Você tem algum projeto pessoal que tem trabalhado recentemente? Se sim,
+poderia nos contar um pouco sobre o projeto e quais tem sido seus principais
+desafios?
+
+Estou trabalhando com alguns projetos mais simples como e-commerces então não tenho tido tanto desafio, mas além disso tive que trabalhar com algumas api's bem limitadas para desenvolver um email sender sem restrições como o outlook e fazer a segurança dessa aplicação e saber lidar e contornar as fraquezas da api foi um grande desafio.
+
